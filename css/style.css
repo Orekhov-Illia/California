@@ -1,0 +1,169 @@
+@import url(owl.carousel.css);
+@import url(owl.theme.default.css);
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap");
+.container {
+  max-width: 1294px;
+  margin: auto; }
+
+header {
+  padding: 30px 0 60px;
+  background-color: white; }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  header nav ul {
+    list-style: none;
+    display: flex; }
+    header nav ul li {
+      margin-left: 40px; }
+      header nav ul li:first-of-type {
+        margin-left: 0; }
+      header nav ul li a {
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        color: black;
+        text-decoration: none; }
+      header nav ul li img {
+        margin-left: 4px; }
+  header ul {
+    list-style: none;
+    display: flex; }
+    header ul li {
+      margin-left: 27px; }
+      header ul li:first-of-type {
+        margin-left: 0; }
+      header ul li:last-of-type {
+        padding-right: 20px; }
+
+.main_banner {
+  background: #DCE5E2;
+  border-radius: 32px;
+  max-width: 1294px;
+  margin: auto; }
+  .main_banner .container {
+    display: flex;
+    justify-content: space-between; }
+  .main_banner article {
+    padding-top: 145px;
+    padding-left: 56px;
+    max-width: 588px; }
+    .main_banner article h1 {
+      font-family: "Readex Pro", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 55px;
+      line-height: 70px;
+      color: #000000; }
+    .main_banner article p {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 19px;
+      color: #000000;
+      padding-top: 19px;
+      padding-bottom: 44px; }
+    .main_banner article a {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      text-transform: capitalize;
+      color: #000000;
+      border: 1px solid #000000;
+      border-radius: 200px;
+      padding: 14px 53px; }
+  .main_banner img {
+    display: block;
+    max-width: 100%; }
+
+.owl-nav .owl-prev {
+  position: absolute;
+  left: 15px;
+  bottom: 270px; }
+
+.owl-nav .owl-prev:before {
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  content: "\f053";
+  color: black;
+  font-size: 30px; }
+
+.owl-nav .owl-next {
+  position: absolute;
+  left: 1250px;
+  bottom: 270px; }
+
+.owl-nav .owl-next:before {
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  content: "\f053";
+  color: black;
+  font-size: 30px;
+  transform: rotate(180deg);
+  display: inline-block; }
+
+.owl-dots {
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+  left: 11px;
+  display: flex;
+  justify-content: center; }
+  .owl-dots span {
+    display: inline-block;
+    width: 194px;
+    height: 2px;
+    background: #000000;
+    border-radius: 0;
+    margin-right: 34px; }
+  .owl-dots .active span {
+    display: inline-block;
+    width: 194px;
+    height: 2px;
+    background: grey;
+    border-radius: 0; }
+
+.shop_categories {
+  padding: 75px 0 100px;
+  background-color: white; }
+  .shop_categories .container {
+    max-width: 1340px; }
+  .shop_categories article h2 {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    text-align: center;
+    color: #000000;
+    padding-bottom: 9px; }
+  .shop_categories article p {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #000000;
+    padding-bottom: 55px; }
+  .shop_categories .container_flex {
+    display: flex; }
+    .shop_categories .container_flex .column {
+      flex-wrap: wrap;
+      flex-direction: column; }
+  .shop_categories img {
+    max-width: 100%;
+    display: block; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+/*# sourceMappingURL=style.css.map */
