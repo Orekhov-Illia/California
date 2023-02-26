@@ -1,0 +1,108 @@
+$black_color: black;
+$white_color: white;
+$main_font_1: 'Inter', sans-serif;
+$main_font_2: 'Readex Pro', sans-serif;
+
+.main_banner{
+  background: #DCE5E2;
+  border-radius: 32px;
+  max-width: 1294px;
+  margin: auto;
+  .container{
+    display: flex;
+    justify-content: space-between;
+  }
+  article{
+    padding-top: 145px;
+    padding-left: 56px;
+    max-width: 588px;
+    h1{
+      font-family: $main_font_2;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 55px;
+      line-height: 70px;
+      color: #000000;
+    }
+    p{
+      font-family: $main_font_1;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 19px;
+      color: #000000;
+      padding-top: 19px;
+      padding-bottom: 44px;
+    }
+    a{
+      font-family: $main_font_1;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      text-transform: capitalize;
+      color: #000000;
+      border: 1px solid #000000;
+      border-radius: 200px;
+      padding: 14px 53px;
+    }
+  }
+  img{
+    display: block;
+    max-width: 100%;
+  }
+}
+
+
+.owl-nav .owl-prev{
+  position: absolute;
+  left: 15px;
+  bottom: 270px;
+}
+.owl-nav .owl-prev:before{
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  content: "\f053";
+  color: $black_color;
+  font-size: 30px;
+}
+.owl-nav .owl-next{
+  position: absolute;
+  left: 1250px;
+  bottom: 270px;
+}
+.owl-nav .owl-next:before{
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  content: "\f053";
+  color: $black_color;
+  font-size: 30px;
+  transform: rotate(180deg);
+  display: inline-block;
+}
+.owl-dots{
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+  left: 11px;
+  display: flex;
+  justify-content: center;
+  span{
+    display: inline-block;
+    width: 194px;
+    height: 2px;
+    background: #000000;
+    border-radius: 0;
+    margin-right: 34px;
+  }
+  .active span{
+    display: inline-block;
+    width: 194px;
+    height: 2px;
+    background: grey;
+    border-radius: 0;
+  }
+}
+
+
+

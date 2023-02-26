@@ -1,0 +1,48 @@
+$black_color: black;
+$white_color: white;
+$main_font_1: 'Inter', sans-serif;
+$main_font_2: 'Readex Pro', sans-serif;
+
+.shop_categories{
+  padding: 75px 0 100px;
+  background-color: $white_color;
+  .container{
+    max-width: 1340px;
+  }
+  article{
+    h2{
+      font-family: 'Readex Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 42px;
+      line-height: 52px;
+      text-align: center;
+      color: #000000;
+      padding-bottom: 9px;
+    }
+    p{
+      font-family: 'Readex Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      color: #000000;
+      padding-bottom: 55px;
+    }
+  }
+  .container_flex{
+    display: flex;
+    .column{
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+  }
+  img{
+    max-width: 100%;
+    display: block;
+    &:hover{
+
+    }
+  }
+}

@@ -1,0 +1,56 @@
+$black_color: black;
+$white_color: white;
+$main_font_1: 'Inter', sans-serif;
+
+.container{
+  max-width: 1294px;
+  margin: auto;
+}
+header{
+  padding: 30px 0 60px;
+  background-color: $white_color;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav{
+    ul{
+      list-style: none;
+      display: flex;
+      li{
+        margin-left: 40px;
+        &:first-of-type{
+        margin-left: 0;
+      }
+      a{
+        font-family: $main_font_1;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        color: $black_color;
+        text-decoration: none;
+      }
+        img{
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+  ul{
+    list-style: none;
+    display: flex;
+    li{
+      margin-left: 27px;
+      &:first-of-type{
+        margin-left: 0;
+      }
+      &:last-of-type{
+        padding-right: 20px;
+      }
+    }
+  }
+}
+
