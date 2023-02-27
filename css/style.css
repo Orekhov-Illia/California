@@ -136,7 +136,7 @@ header {
   .shop_categories .container {
     max-width: 1340px; }
   .shop_categories article h2 {
-    font-family: 'Readex Pro';
+    font-family: "Readex Pro", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 42px;
@@ -145,13 +145,13 @@ header {
     color: #000000;
     padding-bottom: 9px; }
   .shop_categories article p {
-    font-family: 'Readex Pro';
+    font-family: "Readex Pro", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     text-align: center;
-    color: #000000;
+    color: black;
     padding-bottom: 55px; }
   .shop_categories .container_flex {
     display: flex; }
@@ -161,6 +161,122 @@ header {
   .shop_categories img {
     max-width: 100%;
     display: block; }
+
+.most_selled {
+  padding: 0 0 74px;
+  background: white; }
+  .most_selled h3 {
+    font-family: "Readex Pro", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    text-align: center;
+    color: #000000;
+    padding-bottom: 9px; }
+  .most_selled .most_selled_text {
+    font-family: "Readex Pro", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 59px; }
+  .most_selled .container_flex {
+    display: flex;
+    justify-content: space-between; }
+  .most_selled article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; }
+    .most_selled article img {
+      padding-left: 28px; }
+    .most_selled article a {
+      font-family: "Readex Pro", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 28px;
+      color: #000000;
+      padding: 37px 0 9px; }
+    .most_selled article:first-of-type p {
+      padding-bottom: 25px; }
+    .most_selled article p {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #4B4B4B;
+      max-width: 261px;
+      padding-bottom: 8px; }
+    .most_selled article span {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: #000000; }
+
+.best h3 {
+  font-family: 'Readex Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 52px;
+  text-align: center;
+  color: #000000;
+  padding-bottom: 9px; }
+.best p {
+  font-family: 'Readex Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: center;
+  color: #000000;
+  padding-bottom: 56px; }
+.best .container_flex {
+  display: flex;
+  justify-content: space-between; }
+.best article {
+  background: #F8F9FA;
+  width: 413px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center; }
+  .best article h5 {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: #000000;
+    padding-top: 41px; }
+  .best article h4 {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 35px;
+    color: #000000;
+    padding-bottom: 44px; }
+  .best article a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 200px;
+    padding: 14px 63px; }
+  .best article img {
+    padding-top: 44px; }
 
 * {
   padding: 0;

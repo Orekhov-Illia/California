@@ -11,7 +11,7 @@ $main_font_2: 'Readex Pro', sans-serif;
   }
   article{
     h2{
-      font-family: 'Readex Pro';
+      font-family: $main_font_2;
       font-style: normal;
       font-weight: 400;
       font-size: 42px;
@@ -21,13 +21,13 @@ $main_font_2: 'Readex Pro', sans-serif;
       padding-bottom: 9px;
     }
     p{
-      font-family: 'Readex Pro';
+      font-family: $main_font_2;
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
       line-height: 17px;
       text-align: center;
-      color: #000000;
+      color: $black_color;
       padding-bottom: 55px;
     }
   }
