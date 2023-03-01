@@ -133,8 +133,6 @@ header {
 .shop_categories {
   padding: 75px 0 100px;
   background-color: white; }
-  .shop_categories .container {
-    max-width: 1340px; }
   .shop_categories article h2 {
     font-family: "Readex Pro", sans-serif;
     font-style: normal;
@@ -154,13 +152,142 @@ header {
     color: black;
     padding-bottom: 55px; }
   .shop_categories .container_flex {
-    display: flex; }
-    .shop_categories .container_flex .column {
-      flex-wrap: wrap;
-      flex-direction: column; }
-  .shop_categories img {
-    max-width: 100%;
-    display: block; }
+    display: flex;
+    justify-content: space-between; }
+  .shop_categories .column .art_laptop {
+    width: 639px;
+    height: 472px;
+    box-shadow: 0 0 20px #c5c5c5;
+    margin-bottom: 16px;
+    transition-duration: 0.5s;
+    position: relative;
+    top: 0; }
+    .shop_categories .column .art_laptop:hover {
+      top: 10px; }
+    .shop_categories .column .art_laptop img {
+      position: relative;
+      left: 42px; }
+    .shop_categories .column .art_laptop span {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 19px;
+      text-align: right;
+      color: #000000;
+      padding-left: 35px; }
+    .shop_categories .column .art_laptop h5 {
+      font-family: 'Readex Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 38px;
+      text-align: right;
+      color: #000000;
+      padding-right: 42px; }
+  .shop_categories .column .art_watch {
+    width: 639px;
+    height: 270px;
+    box-shadow: 0 0 20px #c5c5c5;
+    display: flex;
+    transition-duration: 0.5s;
+    position: relative;
+    top: 0; }
+    .shop_categories .column .art_watch:hover {
+      position: relative;
+      top: 10px; }
+    .shop_categories .column .art_watch img {
+      position: relative;
+      left: 42px; }
+    .shop_categories .column .art_watch .watch_text {
+      display: flex;
+      flex-direction: column;
+      padding-left: 36px; }
+      .shop_categories .column .art_watch .watch_text span {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 19px;
+        text-align: right;
+        color: #000000;
+        padding-left: 135px;
+        padding-top: 98px; }
+      .shop_categories .column .art_watch .watch_text h5 {
+        font-family: 'Readex Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 38px;
+        text-align: right;
+        color: #000000; }
+  .shop_categories .art_phones {
+    width: 312px;
+    height: 759px;
+    box-shadow: 0 0 20px #c5c5c5;
+    transition-duration: 0.5s;
+    position: relative;
+    top: 0; }
+    .shop_categories .art_phones:hover {
+      position: relative;
+      top: 10px; }
+    .shop_categories .art_phones img {
+      position: relative;
+      left: 16px;
+      top: 140px; }
+    .shop_categories .art_phones .phones_text {
+      display: flex;
+      flex-direction: column;
+      margin-top: 177px; }
+      .shop_categories .art_phones .phones_text span {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 19px;
+        text-align: center;
+        color: #000000; }
+      .shop_categories .art_phones .phones_text h5 {
+        font-family: 'Readex Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+        color: #000000; }
+  .shop_categories .art_tablet {
+    width: 312px;
+    height: 759px;
+    box-shadow: 0 0 20px #c5c5c5;
+    transition-duration: 0.5s;
+    position: relative;
+    top: 0; }
+    .shop_categories .art_tablet:hover {
+      position: relative;
+      top: 10px; }
+    .shop_categories .art_tablet img {
+      position: relative;
+      top: 38px; }
+    .shop_categories .art_tablet .tablet_text {
+      display: flex;
+      flex-direction: column;
+      margin-top: 114px; }
+      .shop_categories .art_tablet .tablet_text span {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 19px;
+        text-align: center;
+        color: #000000; }
+      .shop_categories .art_tablet .tablet_text h5 {
+        font-family: 'Readex Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+        color: #000000; }
 
 .most_selled {
   padding: 0 0 74px;
@@ -277,6 +404,160 @@ header {
     padding: 14px 63px; }
   .best article img {
     padding-top: 44px; }
+
+.ideas {
+  padding: 75px 0; }
+  .ideas h3 {
+    font-family: "Readex Pro", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    text-align: center;
+    color: black;
+    padding-bottom: 9px; }
+  .ideas p {
+    font-family: "Readex Pro", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: center;
+    color: black;
+    padding-bottom: 56px; }
+  .ideas .container_flex {
+    display: flex;
+    justify-content: space-between; }
+  .ideas article {
+    max-width: 600px;
+    padding-top: 10px; }
+    .ideas article h5 {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 30px;
+      color: black;
+      padding-bottom: 28px; }
+  .ideas .see_all {
+    text-align: center;
+    padding-top: 73px; }
+    .ideas .see_all a {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+      text-transform: capitalize;
+      text-align: center;
+      text-decoration: none;
+      color: black;
+      padding-top: 73px; }
+    .ideas .see_all img {
+      position: relative;
+      top: 5px; }
+
+.looking_for {
+  padding-bottom: 19px; }
+  .looking_for h3 {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    text-align: center;
+    color: #000000;
+    padding-bottom: 24px; }
+  .looking_for form {
+    background: #F8F9FA;
+    border: 1px solid #C5C5C5;
+    border-radius: 100px;
+    max-width: 650px;
+    height: 60px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 21px 29px;
+    display: flex;
+    align-items: center; }
+    .looking_for form img {
+      position: relative;
+      right: 15px; }
+    .looking_for form label {
+      display: none; }
+    .looking_for form input {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #000000;
+      border: none;
+      width: 100%;
+      box-sizing: border-box; }
+      .looking_for form input::placeholder {
+        color: black; }
+  .looking_for .key_words {
+    padding: 30px 0 81px;
+    max-width: 660px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .looking_for .key_words a {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #000000;
+      background: #FFFFFF;
+      border: 1px solid #C5C5C5;
+      border-radius: 200px;
+      padding: 12px 22px;
+      margin-right: 7px;
+      margin-top: 7px;
+      text-decoration: none; }
+  .looking_for article {
+    background: #DCE5E2;
+    border-radius: 16px;
+    padding-bottom: 18px;
+    max-width: 935px;
+    margin: auto; }
+    .looking_for article h4 {
+      font-family: 'Readex Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 42px;
+      line-height: 52px;
+      text-align: center;
+      color: #000000;
+      padding: 47px 0 9px; }
+    .looking_for article p {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      color: #000000;
+      padding-bottom: 14px; }
+    .looking_for article img {
+      display: block;
+      margin: 0 auto;
+      padding-bottom: 14px; }
+    .looking_for article form {
+      max-width: 285px;
+      height: 50px;
+      width: 100%;
+      box-sizing: border-box;
+      margin: auto;
+      padding: 21px 29px;
+      display: flex;
+      align-items: center;
+      background: #DCE5E2;
+      border: 1px solid #000000;
+      border-radius: 54px 0 0 54px; }
 
 * {
   padding: 0;

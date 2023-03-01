@@ -1,0 +1,67 @@
+$black_color: black;
+$white_color: white;
+$main_font_1: 'Inter', sans-serif;
+$main_font_2: 'Readex Pro', sans-serif;
+
+.ideas{
+  padding: 75px 0;
+  h3{
+    font-family: $main_font_2;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    text-align: center;
+    color: $black_color;
+    padding-bottom: 9px;
+  }
+  p{
+    font-family: $main_font_2;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: center;
+    color: $black_color;
+    padding-bottom: 56px;
+  }
+  .container_flex{
+    display: flex;
+    justify-content: space-between;
+
+  }
+  article{
+    max-width: 600px;
+    padding-top: 10px;
+
+    h5{
+      font-family: $main_font_1;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 30px;
+      color: $black_color;
+      padding-bottom: 28px;
+    }
+  }
+  .see_all{
+    text-align: center;
+    padding-top: 73px;
+    a{
+      font-family:$main_font_1;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+      text-transform: capitalize;
+      text-align: center;
+      text-decoration: none;
+      color: $black_color;
+      padding-top: 73px;
+    }
+    img{
+      position: relative;
+      top: 5px;
+    }
+  }
+}
