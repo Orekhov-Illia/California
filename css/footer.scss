@@ -1,0 +1,85 @@
+$black_color: black;
+$white_color: white;
+$main_font_1: 'Inter', sans-serif;
+$main_font_2: 'Readex Pro', sans-serif;
+
+footer{
+  background: #F8F9FA;
+  border-top:  1px solid #DCE5E2;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 44px 0 78px;
+  }
+  p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    padding-top: 18px;
+  }
+  .footer_menu{
+    display: flex;
+    align-items: flex-start;
+  }
+  ul{
+    margin-right: 100px;
+    list-style: none;
+
+    li{
+      font-family: 'Readex Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 28px;
+      color: #000000;
+      margin-bottom: 19px;
+      a{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 22px;
+        color: #000000;
+        margin-bottom: 14px;
+        text-decoration: none;
+      }
+    }
+  }
+  .footer_end{
+    max-width: 1350px;
+    margin: auto;
+    padding-bottom: 20px;
+    border-top: 1px solid #DCE5E2;
+    .footer_end_flex{
+      max-width: 1294px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 52px;
+    }
+    span{
+      font-family: 'Readex Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: #000000;
+    }
+    a{
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: #000000;
+      text-decoration: none;
+      img{
+        position: relative;
+        top: 4px;
+      }
+    }
+  }
+}
