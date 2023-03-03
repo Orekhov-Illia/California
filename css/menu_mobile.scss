@@ -1,0 +1,66 @@
+$black_color: black;
+$white_color: white;
+
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+#burger-menu {
+  cursor: pointer;
+  height: 27px;
+  width: 71px;
+  overflow: visible;
+  position: absolute;
+  z-index:6;
+  display: none;
+  @include max-screen(767px){
+    display: block;
+  }
+  span, span:before, span:after {
+    background: $black_color;
+    display: block;
+    height: 4px;
+    opacity: 1;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+  }
+  span {
+    right: 0;
+    top: 13px;
+    width: 35px;
+    &:before{
+      content: "";
+      left: 0;
+      top: -10px;
+      width: 35px;
+    }
+    &:after{
+      content: "";
+      left: 0;
+      top: 10px;
+      width: 35px;
+    }
+  }
+}
+
+#burger-menu.close{
+  span {
+    transform: rotate(-45deg);
+    top: 13px;
+    width: 27px;
+    &:before{
+      top: 0;
+      transform: rotate(90deg);
+      width: 27px;
+    }
+    &:after{
+      top: 0;
+      left:0;
+      transform: rotate(90deg);
+      opacity:0;
+      width:0;
+    }
+  }
+}

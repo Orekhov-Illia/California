@@ -1,6 +1,54 @@
 @import url(owl.carousel.css);
 @import url(owl.theme.default.css);
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap");
+#burger-menu {
+  cursor: pointer;
+  height: 27px;
+  width: 71px;
+  overflow: visible;
+  position: absolute;
+  z-index: 6;
+  display: none; }
+  @media screen and (max-width: 767px) {
+    #burger-menu {
+      display: block; } }
+  #burger-menu span, #burger-menu span:before, #burger-menu span:after {
+    background: black;
+    display: block;
+    height: 4px;
+    opacity: 1;
+    position: absolute;
+    transition: 0.3s ease-in-out; }
+  #burger-menu span {
+    right: 0;
+    top: 13px;
+    width: 35px; }
+    #burger-menu span:before {
+      content: "";
+      left: 0;
+      top: -10px;
+      width: 35px; }
+    #burger-menu span:after {
+      content: "";
+      left: 0;
+      top: 10px;
+      width: 35px; }
+
+#burger-menu.close span {
+  transform: rotate(-45deg);
+  top: 13px;
+  width: 27px; }
+  #burger-menu.close span:before {
+    top: 0;
+    transform: rotate(90deg);
+    width: 27px; }
+  #burger-menu.close span:after {
+    top: 0;
+    left: 0;
+    transform: rotate(90deg);
+    opacity: 0;
+    width: 0; }
+
 .container {
   max-width: 1294px;
   margin: auto; }
@@ -12,23 +60,41 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-  header nav ul {
+  @media screen and (max-width: 767px) {
+    header .header_logo {
+      position: absolute;
+      left: calc(50% - 40px);
+      top: 30px; } }
+  header .nav .menu_list {
     list-style: none;
     display: flex; }
-    header nav ul li {
+    @media screen and (max-width: 767px) {
+      header .nav .menu_list {
+        display: block;
+        text-align: center; } }
+    header .nav .menu_list li {
       margin-left: 40px; }
-      header nav ul li:first-of-type {
+      @media screen and (max-width: 767px) {
+        header .nav .menu_list li {
+          margin-left: 0; } }
+      header .nav .menu_list li:first-of-type {
         margin-left: 0; }
-      header nav ul li:hover .hover_menu {
+        @media screen and (max-width: 767px) {
+          header .nav .menu_list li:first-of-type {
+            margin-top: 70px; } }
+      header .nav .menu_list li:hover .hover_menu {
         display: block; }
-      header nav ul li .hover_menu {
+        @media screen and (max-width: 767px) {
+          header .nav .menu_list li:hover .hover_menu {
+            display: none; } }
+      header .nav .menu_list li .hover_menu {
         flex-direction: column;
         position: absolute;
         display: none; }
-        header nav ul li .hover_menu li {
+        header .nav .menu_list li .hover_menu li {
           margin-left: 0;
           margin-top: 14px; }
-      header nav ul li a {
+      header .nav .menu_list li a {
         font-family: "Inter", sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -37,8 +103,11 @@ header {
         text-transform: uppercase;
         color: black;
         text-decoration: none; }
-      header nav ul li img {
+      header .nav .menu_list li img {
         margin-left: 4px; }
+        @media screen and (max-width: 767px) {
+          header .nav .menu_list li img {
+            display: none; } }
   header ul {
     list-style: none;
     display: flex; }
@@ -48,6 +117,9 @@ header {
         margin-left: 0; }
       header ul li:last-of-type {
         padding-right: 20px; }
+        @media screen and (max-width: 767px) {
+          header ul li:last-of-type {
+            padding-right: 0; } }
 
 .main_banner {
   background: #DCE5E2;
@@ -675,5 +747,42 @@ footer {
 * {
   padding: 0;
   margin: 0; }
+
+@media only screen and (max-width: 767px) {
+  #menu {
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    padding-top: 60px;
+    transition: all 0.3s ease-in-out; }
+
+  #menu.overlay {
+    visibility: visible;
+    opacity: 95%;
+    padding-top: 100px;
+    background: grey;
+    z-index: 5; }
+
+  #menu ul li {
+    list-style: none;
+    text-align: center; }
+
+  #menu a {
+    color: black;
+    display: block;
+    font-size: 44px;
+    margin-bottom: 70px;
+    text-decoration: none;
+    opacity: 1;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-shadow: #D6D6D6 1px 0 10px; } }
 
 /*# sourceMappingURL=style.css.map */

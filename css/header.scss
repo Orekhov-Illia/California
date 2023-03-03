@@ -6,6 +6,11 @@ $main_font_1: 'Inter', sans-serif;
   display: flex;
   justify-content: space-between;
 }
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
 
 .container{
   max-width: 1294px;
@@ -18,17 +23,37 @@ header{
     @include flex_between;
     align-items: center;
   }
-  nav{
-    ul{
+  .header_logo{
+    @include max-screen(767px) {
+      position: absolute;
+      left: calc(50% - 40px);
+      top: 30px;
+    }
+  }
+  .nav{
+    .menu_list{
       list-style: none;
       display: flex;
+      @include max-screen(767px) {
+        display: block;
+        text-align: center;
+      }
       li{
         margin-left: 40px;
+        @include max-screen(767px) {
+          margin-left: 0;
+        }
         &:first-of-type{
         margin-left: 0;
+          @include max-screen(767px) {
+            margin-top: 70px;
+          }
       }
         &:hover .hover_menu{
           display: block;
+          @include max-screen(767px) {
+            display: none;
+          }
         }
         .hover_menu{
           flex-direction: column;
@@ -54,6 +79,9 @@ header{
       }
         img{
           margin-left: 4px;
+          @include max-screen(767px) {
+            display: none;
+          }
         }
       }
     }
@@ -68,6 +96,9 @@ header{
       }
       &:last-of-type{
         padding-right: 20px;
+        @include max-screen(767px) {
+          padding-right: 0;
+        }
       }
     }
   }
