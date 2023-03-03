@@ -3,21 +3,25 @@ $white_color: white;
 $main_font_1: 'Inter', sans-serif;
 $main_font_2: 'Readex Pro', sans-serif;
 
+@mixin flex_between{
+  display: flex;
+  justify-content: space-between;
+}
+
 footer{
   background: #F8F9FA;
   border-top:  1px solid #DCE5E2;
   .container{
-    display: flex;
-    justify-content: space-between;
+    @include flex_between;
     padding: 44px 0 78px;
   }
   p{
-    font-family: 'Inter';
+    font-family: $main_font_1;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    color: #000000;
+    color: $black_color;
     padding-top: 18px;
   }
   .footer_menu{
@@ -29,20 +33,20 @@ footer{
     list-style: none;
 
     li{
-      font-family: 'Readex Pro';
+      font-family: $main_font_2;
       font-style: normal;
       font-weight: 400;
       font-size: 22px;
       line-height: 28px;
-      color: #000000;
+      color: $black_color;
       margin-bottom: 19px;
       a{
-        font-family: 'Inter';
+        font-family: $main_font_1;
         font-style: normal;
         font-weight: 400;
         font-size: 17px;
         line-height: 22px;
-        color: #000000;
+        color: $black_color;
         margin-bottom: 14px;
         text-decoration: none;
       }
@@ -56,25 +60,24 @@ footer{
     .footer_end_flex{
       max-width: 1294px;
       margin: auto;
-      display: flex;
-      justify-content: space-between;
+      @include flex_between;
       padding-top: 52px;
     }
     span{
-      font-family: 'Readex Pro';
+      font-family: $main_font_2;
       font-style: normal;
       font-weight: 400;
       font-size: 18px;
       line-height: 22px;
-      color: #000000;
+      color: $black_color;
     }
     a{
-      font-family: 'Inter';
+      font-family: $main_font_1;
       font-style: normal;
       font-weight: 400;
       font-size: 18px;
       line-height: 22px;
-      color: #000000;
+      color: $black_color;
       text-decoration: none;
       img{
         position: relative;

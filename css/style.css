@@ -19,6 +19,15 @@ header {
       margin-left: 40px; }
       header nav ul li:first-of-type {
         margin-left: 0; }
+      header nav ul li:hover .hover_menu {
+        display: block; }
+      header nav ul li .hover_menu {
+        flex-direction: column;
+        position: absolute;
+        display: none; }
+        header nav ul li .hover_menu li {
+          margin-left: 0;
+          margin-top: 14px; }
       header nav ul li a {
         font-family: "Inter", sans-serif;
         font-style: normal;
@@ -58,14 +67,14 @@ header {
       font-weight: 400;
       font-size: 55px;
       line-height: 70px;
-      color: #000000; }
+      color: black; }
     .main_banner article p {
       font-family: "Inter", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 15px;
       line-height: 19px;
-      color: #000000;
+      color: black;
       padding-top: 19px;
       padding-bottom: 44px; }
     .main_banner article a {
@@ -75,8 +84,8 @@ header {
       font-size: 18px;
       line-height: 22px;
       text-transform: capitalize;
-      color: #000000;
-      border: 1px solid #000000;
+      color: black;
+      border: 1px solid black;
       border-radius: 200px;
       padding: 14px 53px; }
   .main_banner img {
@@ -120,7 +129,7 @@ header {
     display: inline-block;
     width: 194px;
     height: 2px;
-    background: #000000;
+    background: black;
     border-radius: 0;
     margin-right: 34px; }
   .owl-dots .active span {
@@ -140,7 +149,7 @@ header {
     font-size: 42px;
     line-height: 52px;
     text-align: center;
-    color: #000000;
+    color: black;
     padding-bottom: 9px; }
   .shop_categories article p {
     font-family: "Readex Pro", sans-serif;
@@ -155,44 +164,48 @@ header {
     display: flex;
     justify-content: space-between; }
   .shop_categories .column .art_laptop {
-    width: 639px;
-    height: 472px;
+    width: 312px;
+    height: 759px;
     box-shadow: 0 0 20px #c5c5c5;
-    margin-bottom: 16px;
     transition-duration: 0.5s;
     position: relative;
-    top: 0; }
+    top: 0;
+    width: 639px;
+    height: 472px;
+    margin-bottom: 16px; }
     .shop_categories .column .art_laptop:hover {
       top: 10px; }
     .shop_categories .column .art_laptop img {
       position: relative;
       left: 42px; }
     .shop_categories .column .art_laptop span {
-      font-family: 'Inter';
+      font-family: "Inter", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 15px;
       line-height: 19px;
       text-align: right;
-      color: #000000;
+      color: black;
       padding-left: 35px; }
     .shop_categories .column .art_laptop h5 {
-      font-family: 'Readex Pro';
+      font-family: "Readex Pro", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 32px;
       line-height: 38px;
       text-align: right;
-      color: #000000;
+      color: black;
       padding-right: 42px; }
   .shop_categories .column .art_watch {
-    width: 639px;
-    height: 270px;
+    width: 312px;
+    height: 759px;
     box-shadow: 0 0 20px #c5c5c5;
-    display: flex;
     transition-duration: 0.5s;
     position: relative;
-    top: 0; }
+    top: 0;
+    width: 639px;
+    height: 270px;
+    display: flex; }
     .shop_categories .column .art_watch:hover {
       position: relative;
       top: 10px; }
@@ -204,23 +217,23 @@ header {
       flex-direction: column;
       padding-left: 36px; }
       .shop_categories .column .art_watch .watch_text span {
-        font-family: 'Inter';
+        font-family: "Inter", sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 15px;
         line-height: 19px;
         text-align: right;
-        color: #000000;
+        color: black;
         padding-left: 135px;
         padding-top: 98px; }
       .shop_categories .column .art_watch .watch_text h5 {
-        font-family: 'Readex Pro';
+        font-family: "Readex Pro", sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 32px;
         line-height: 38px;
         text-align: right;
-        color: #000000; }
+        color: black; }
   .shop_categories .art_phones {
     width: 312px;
     height: 759px;
@@ -240,21 +253,23 @@ header {
       flex-direction: column;
       margin-top: 177px; }
       .shop_categories .art_phones .phones_text span {
-        font-family: 'Inter';
+        font-family: "Inter", sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 15px;
         line-height: 19px;
-        text-align: center;
-        color: #000000; }
+        text-align: right;
+        color: black;
+        text-align: center; }
       .shop_categories .art_phones .phones_text h5 {
-        font-family: 'Readex Pro';
+        font-family: "Readex Pro", sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 32px;
         line-height: 38px;
-        text-align: center;
-        color: #000000; }
+        text-align: right;
+        color: black;
+        text-align: center; }
   .shop_categories .art_tablet {
     width: 312px;
     height: 759px;
@@ -273,21 +288,23 @@ header {
       flex-direction: column;
       margin-top: 114px; }
       .shop_categories .art_tablet .tablet_text span {
-        font-family: 'Inter';
+        font-family: "Inter", sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 15px;
         line-height: 19px;
-        text-align: center;
-        color: #000000; }
+        text-align: right;
+        color: black;
+        text-align: center; }
       .shop_categories .art_tablet .tablet_text h5 {
-        font-family: 'Readex Pro';
+        font-family: "Readex Pro", sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 32px;
         line-height: 38px;
-        text-align: center;
-        color: #000000; }
+        text-align: right;
+        color: black;
+        text-align: center; }
 
 .most_selled {
   padding: 0 0 74px;
@@ -299,16 +316,17 @@ header {
     font-size: 42px;
     line-height: 52px;
     text-align: center;
-    color: #000000;
+    color: black;
     padding-bottom: 9px; }
   .most_selled .most_selled_text {
     font-family: "Readex Pro", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 17px;
-    color: #000000;
     text-align: center;
+    color: black;
+    padding-bottom: 55px;
     padding-bottom: 59px; }
   .most_selled .container_flex {
     display: flex;
@@ -319,14 +337,15 @@ header {
     flex-direction: column; }
     .most_selled article img {
       padding-left: 28px; }
-    .most_selled article a {
+    .most_selled article .sell_tech {
       font-family: "Readex Pro", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 22px;
       line-height: 28px;
-      color: #000000;
-      padding: 37px 0 9px; }
+      color: black;
+      padding: 37px 0 9px;
+      text-decoration: none; }
     .most_selled article:first-of-type p {
       padding-bottom: 25px; }
     .most_selled article p {
@@ -344,26 +363,26 @@ header {
       font-weight: 400;
       font-size: 18px;
       line-height: 22px;
-      color: #000000; }
+      color: black; }
 
 .best h3 {
-  font-family: 'Readex Pro';
+  font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 42px;
   line-height: 52px;
   text-align: center;
-  color: #000000;
+  color: black;
   padding-bottom: 9px; }
 .best p {
-  font-family: 'Readex Pro';
+  font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 17px;
   text-align: center;
-  color: #000000;
-  padding-bottom: 56px; }
+  color: black;
+  padding-bottom: 55px; }
 .best .container_flex {
   display: flex;
   justify-content: space-between; }
@@ -375,31 +394,34 @@ header {
   flex-direction: column;
   align-items: center; }
   .best article h5 {
-    font-family: 'Readex Pro';
+    font-family: "Readex Pro", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 17px;
-    color: #000000;
-    padding-top: 41px; }
+    text-align: center;
+    color: black;
+    padding-bottom: 55px;
+    padding-top: 41px;
+    padding-bottom: 0; }
   .best article h4 {
-    font-family: 'Readex Pro';
+    font-family: "Readex Pro", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
     line-height: 35px;
-    color: #000000;
+    color: black;
     padding-bottom: 44px; }
   .best article a {
-    font-family: 'Inter';
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     text-decoration: none;
     text-transform: capitalize;
-    color: #000000;
-    border: 1px solid #000000;
+    color: black;
+    border: 1px solid black;
     border-radius: 200px;
     padding: 14px 63px; }
   .best article img {
@@ -420,11 +442,11 @@ header {
     font-family: "Readex Pro", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 17px;
     text-align: center;
     color: black;
-    padding-bottom: 56px; }
+    padding-bottom: 55px; }
   .ideas .container_flex {
     display: flex;
     justify-content: space-between; }
@@ -460,13 +482,14 @@ header {
 .looking_for {
   padding-bottom: 19px; }
   .looking_for h3 {
-    font-family: 'Readex Pro';
+    font-family: "Readex Pro", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 42px;
     line-height: 52px;
     text-align: center;
-    color: #000000;
+    color: black;
+    padding-bottom: 9px;
     padding-bottom: 24px; }
   .looking_for form {
     background: #F8F9FA;
@@ -486,12 +509,12 @@ header {
     .looking_for form label {
       display: none; }
     .looking_for form input {
-      font-family: 'Inter';
+      font-family: "Inter", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
       line-height: 17px;
-      color: #000000;
+      color: black;
       border: none;
       width: 100%;
       box-sizing: border-box;
@@ -507,12 +530,12 @@ header {
     flex-wrap: wrap;
     justify-content: center; }
     .looking_for .key_words a {
-      font-family: 'Inter';
+      font-family: "Inter", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
       line-height: 17px;
-      color: #000000;
+      color: black;
       background: #FFFFFF;
       border: 1px solid #C5C5C5;
       border-radius: 200px;
@@ -527,22 +550,23 @@ header {
     max-width: 935px;
     margin: auto; }
     .looking_for article h4 {
-      font-family: 'Readex Pro';
+      font-family: "Readex Pro", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 42px;
       line-height: 52px;
       text-align: center;
-      color: #000000;
+      color: black;
+      padding-bottom: 9px;
       padding: 47px 0 9px; }
     .looking_for article p {
-      font-family: 'Inter';
+      font-family: "Inter", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
       line-height: 19px;
       text-align: center;
-      color: #000000;
+      color: black;
       padding-bottom: 14px; }
     .looking_for article img {
       display: block;
@@ -553,26 +577,26 @@ header {
       height: 50px;
       width: 100%;
       background: #DCE5E2;
-      border: 1px solid #000000;
+      border: 1px solid black;
       margin-bottom: 40px; }
       .looking_for article form label {
         display: none; }
       .looking_for article form input {
-        font-family: 'Inter';
+        font-family: "Inter", sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 17px;
-        color: #000000;
+        color: black;
         outline: none;
         background: #DCE5E2;
         width: 285px; }
       .looking_for article form button {
-        background: #000000;
+        background: black;
         border-radius: 0 200px 200px 0;
         width: 115px;
         height: 50px;
-        font-family: 'Inter';
+        font-family: "Inter", sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -588,12 +612,12 @@ footer {
     justify-content: space-between;
     padding: 44px 0 78px; }
   footer p {
-    font-family: 'Inter';
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    color: #000000;
+    color: black;
     padding-top: 18px; }
   footer .footer_menu {
     display: flex;
@@ -602,20 +626,20 @@ footer {
     margin-right: 100px;
     list-style: none; }
     footer ul li {
-      font-family: 'Readex Pro';
+      font-family: "Readex Pro", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 22px;
       line-height: 28px;
-      color: #000000;
+      color: black;
       margin-bottom: 19px; }
       footer ul li a {
-        font-family: 'Inter';
+        font-family: "Inter", sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 17px;
         line-height: 22px;
-        color: #000000;
+        color: black;
         margin-bottom: 14px;
         text-decoration: none; }
   footer .footer_end {
@@ -630,19 +654,19 @@ footer {
       justify-content: space-between;
       padding-top: 52px; }
     footer .footer_end span {
-      font-family: 'Readex Pro';
+      font-family: "Readex Pro", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 18px;
       line-height: 22px;
-      color: #000000; }
+      color: black; }
     footer .footer_end a {
-      font-family: 'Inter';
+      font-family: "Inter", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 18px;
       line-height: 22px;
-      color: #000000;
+      color: black;
       text-decoration: none; }
       footer .footer_end a img {
         position: relative;

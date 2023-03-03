@@ -2,6 +2,12 @@ $black_color: black;
 $white_color: white;
 $main_font_1: 'Inter', sans-serif;
 $main_font_2: 'Readex Pro', sans-serif;
+$font_js: "Font Awesome 6 Free";
+
+@mixin flex_between{
+  display: flex;
+  justify-content: space-between;
+}
 
 .main_banner{
   background: #DCE5E2;
@@ -9,8 +15,7 @@ $main_font_2: 'Readex Pro', sans-serif;
   max-width: 1294px;
   margin: auto;
   .container{
-    display: flex;
-    justify-content: space-between;
+    @include flex_between;
   }
   article{
     padding-top: 145px;
@@ -22,7 +27,7 @@ $main_font_2: 'Readex Pro', sans-serif;
       font-weight: 400;
       font-size: 55px;
       line-height: 70px;
-      color: #000000;
+      color: $black_color;
     }
     p{
       font-family: $main_font_1;
@@ -30,7 +35,7 @@ $main_font_2: 'Readex Pro', sans-serif;
       font-weight: 400;
       font-size: 15px;
       line-height: 19px;
-      color: #000000;
+      color: $black_color;
       padding-top: 19px;
       padding-bottom: 44px;
     }
@@ -41,8 +46,8 @@ $main_font_2: 'Readex Pro', sans-serif;
       font-size: 18px;
       line-height: 22px;
       text-transform: capitalize;
-      color: #000000;
-      border: 1px solid #000000;
+      color: $black_color;
+      border: 1px solid $black_color;
       border-radius: 200px;
       padding: 14px 53px;
     }
@@ -53,7 +58,6 @@ $main_font_2: 'Readex Pro', sans-serif;
   }
 }
 
-
 .owl-nav .owl-prev{
   position: absolute;
   left: 15px;
@@ -61,7 +65,7 @@ $main_font_2: 'Readex Pro', sans-serif;
 }
 .owl-nav .owl-prev:before{
   font-weight: 900;
-  font-family: "Font Awesome 6 Free";
+  font-family: $font_js;
   content: "\f053";
   color: $black_color;
   font-size: 30px;
@@ -73,7 +77,7 @@ $main_font_2: 'Readex Pro', sans-serif;
 }
 .owl-nav .owl-next:before{
   font-weight: 900;
-  font-family: "Font Awesome 6 Free";
+  font-family: $font_js;
   content: "\f053";
   color: $black_color;
   font-size: 30px;
@@ -91,7 +95,7 @@ $main_font_2: 'Readex Pro', sans-serif;
     display: inline-block;
     width: 194px;
     height: 2px;
-    background: #000000;
+    background: $black_color;
     border-radius: 0;
     margin-right: 34px;
   }

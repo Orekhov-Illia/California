@@ -2,6 +2,11 @@ $black_color: black;
 $white_color: white;
 $main_font_1: 'Inter', sans-serif;
 
+@mixin flex_between{
+  display: flex;
+  justify-content: space-between;
+}
+
 .container{
   max-width: 1294px;
   margin: auto;
@@ -10,8 +15,7 @@ header{
   padding: 30px 0 60px;
   background-color: $white_color;
   .container{
-    display: flex;
-    justify-content: space-between;
+    @include flex_between;
     align-items: center;
   }
   nav{
@@ -23,6 +27,20 @@ header{
         &:first-of-type{
         margin-left: 0;
       }
+        &:hover .hover_menu{
+          display: block;
+        }
+        .hover_menu{
+          flex-direction: column;
+          position: absolute;
+          display: none;
+
+          li{
+            margin-left: 0;
+            margin-top: 14px;
+
+          }
+        }
       a{
         font-family: $main_font_1;
         font-style: normal;
@@ -32,6 +50,7 @@ header{
         text-transform: uppercase;
         color: $black_color;
         text-decoration: none;
+
       }
         img{
           margin-left: 4px;
@@ -52,5 +71,6 @@ header{
       }
     }
   }
+
 }
 

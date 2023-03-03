@@ -4,47 +4,81 @@ $main_font_1: 'Inter', sans-serif;
 $main_font_2: 'Readex Pro', sans-serif;
 $box_shadow: 0 0 20px #c5c5c5;
 
+@mixin flex_between{
+  display: flex;
+  justify-content: space-between;
+}
+@mixin flex_column{
+  display: flex;
+  flex-direction: column;
+}
+@mixin main_article{
+  font-family: $main_font_2;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 52px;
+  text-align: center;
+  color: $black_color;
+  padding-bottom: 9px;
+}
+@mixin main_text{
+  font-family: $main_font_2;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: $black_color;
+  padding-bottom: 55px;
+}
+@mixin image_span{
+  font-family: $main_font_1;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  text-align: right;
+  color: $black_color;
+}
+@mixin image_h5{
+  font-family: $main_font_2;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: right;
+  color: $black_color;
+}
+@mixin image_size{
+  width: 312px;
+  height: 759px;
+  box-shadow: $box_shadow;
+  transition-duration: 0.5s;
+  position: relative;
+  top: 0;
+}
+
 .shop_categories{
   padding: 75px 0 100px;
   background-color: $white_color;
-  .container{
-
-  }
   article{
     h2{
-      font-family: $main_font_2;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 42px;
-      line-height: 52px;
-      text-align: center;
-      color: #000000;
-      padding-bottom: 9px;
+      @include main_article;
     }
     p{
-      font-family: $main_font_2;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 17px;
-      text-align: center;
-      color: $black_color;
-      padding-bottom: 55px;
+      @include main_text;
     }
   }
   .container_flex{
-    display: flex;
-    justify-content: space-between;
+    @include flex_between;
   }
   .column{
     .art_laptop{
+      @include image_size;
       width: 639px;
       height: 472px;
-      box-shadow: $box_shadow;
       margin-bottom: 16px;
-      transition-duration: 0.5s;
-      position: relative;
-      top: 0;
       &:hover{
         top: 10px;
       }
@@ -53,77 +87,43 @@ $box_shadow: 0 0 20px #c5c5c5;
         left: 42px;
       }
       span{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 19px;
-        text-align: right;
-        color: #000000;
+        @include image_span;
         padding-left: 35px;
       }
       h5{
-        font-family: 'Readex Pro';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 38px;
-        text-align: right;
-        color: #000000;
+        @include image_h5;
         padding-right: 42px;
       }
     }
     .art_watch{
+      @include image_size;
       width: 639px;
       height: 270px;
-      box-shadow: $box_shadow;
       display: flex;
-      transition-duration: 0.5s;
-      position: relative;
-      top: 0;
       &:hover{
         position: relative;
         top: 10px;
-
       }
       img{
         position: relative;
         left: 42px;
       }
       .watch_text{
-        display: flex;
-        flex-direction: column;
+        @include flex_column;
         padding-left: 36px;
         span{
-          font-family: 'Inter';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 15px;
-          line-height: 19px;
-          text-align: right;
-          color: #000000;
+          @include image_span;
           padding-left: 135px;
           padding-top: 98px;
         }
         h5{
-          font-family: 'Readex Pro';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 32px;
-          line-height: 38px;
-          text-align: right;
-          color: #000000;
+          @include image_h5;
         }
       }
     }
     }
   .art_phones{
-    width: 312px;
-    height: 759px;
-    box-shadow: $box_shadow;
-    transition-duration: 0.5s;
-    position: relative;
-    top: 0;
+    @include image_size;
     &:hover{
       position: relative;
       top: 10px;
@@ -135,69 +135,40 @@ $box_shadow: 0 0 20px #c5c5c5;
       top: 140px;
     }
     .phones_text{
-        display: flex;
-        flex-direction: column;
+      @include flex_column;
          margin-top: 177px;
 
       span{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 19px;
+        @include image_span;
         text-align: center;
-        color: #000000;
       }
       h5{
-        font-family: 'Readex Pro';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 38px;
+        @include image_h5;
         text-align: center;
-        color: #000000;
-
       }
     }
   }
   .art_tablet{
-    width: 312px;
-    height: 759px;
-    box-shadow: $box_shadow;
-    transition-duration: 0.5s;
-    position: relative;
-    top: 0;
+    @include image_size;
     &:hover{
       position: relative;
       top: 10px;
-
     }
     img{
       position: relative;
       top: 38px;
     }
     .tablet_text{
-      display: flex;
-      flex-direction: column;
+      @include flex_column;
       margin-top: 114px;
 
       span{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 19px;
+        @include image_span;
         text-align: center;
-        color: #000000;
       }
       h5{
-        font-family: 'Readex Pro';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 38px;
+        @include image_h5;
         text-align: center;
-        color: #000000;
       }
     }
   }

@@ -3,30 +3,40 @@ $white_color: white;
 $main_font_1: 'Inter', sans-serif;
 $main_font_2: 'Readex Pro', sans-serif;
 
+@mixin flex_between{
+  display: flex;
+  justify-content: space-between;
+}
+@mixin main_article{
+  font-family: $main_font_2;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 52px;
+  text-align: center;
+  color: $black_color;
+  padding-bottom: 9px;
+}
+@mixin main_text{
+  font-family: $main_font_2;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: $black_color;
+  padding-bottom: 55px;
+}
+
 .best{
   h3{
-    font-family: 'Readex Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 42px;
-    line-height: 52px;
-    text-align: center;
-    color: #000000;
-    padding-bottom: 9px;
+    @include main_article;
   }
   p{
-    font-family: 'Readex Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 17px;
-    text-align: center;
-    color: #000000;
-    padding-bottom: 56px;
+    @include main_text;
   }
   .container_flex{
-    display: flex;
-    justify-content: space-between;
+    @include flex_between;
   }
   article{
     background: #F8F9FA;
@@ -36,33 +46,29 @@ $main_font_2: 'Readex Pro', sans-serif;
     flex-direction: column;
     align-items: center;
     h5{
-      font-family: 'Readex Pro';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 13px;
-      line-height: 17px;
-      color: #000000;
+      @include main_text;
       padding-top: 41px;
+      padding-bottom: 0;
     }
     h4{
-      font-family: 'Readex Pro';
+      font-family: $main_font_2;
       font-style: normal;
       font-weight: 400;
       font-size: 28px;
       line-height: 35px;
-      color: #000000;
+      color: $black_color;
       padding-bottom: 44px;
     }
     a{
-      font-family: 'Inter';
+      font-family: $main_font_1;
       font-style: normal;
       font-weight: 400;
       font-size: 18px;
       line-height: 22px;
       text-decoration: none;
       text-transform: capitalize;
-      color: #000000;
-      border: 1px solid #000000;
+      color: $black_color;
+      border: 1px solid $black_color;
       border-radius: 200px;
       padding: 14px 63px;
     }

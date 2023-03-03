@@ -3,16 +3,21 @@ $white_color: white;
 $main_font_1: 'Inter', sans-serif;
 $main_font_2: 'Readex Pro', sans-serif;
 
+@mixin main_article{
+  font-family: $main_font_2;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 52px;
+  text-align: center;
+  color: $black_color;
+  padding-bottom: 9px;
+}
+
 .looking_for{
   padding-bottom: 19px;
   h3{
-    font-family: 'Readex Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 42px;
-    line-height: 52px;
-    text-align: center;
-    color: #000000;
+    @include main_article;
     padding-bottom: 24px;
   }
   form{
@@ -35,20 +40,19 @@ $main_font_2: 'Readex Pro', sans-serif;
       display: none;
     }
     input{
-      font-family: 'Inter';
+      font-family: $main_font_1;
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
       line-height: 17px;
-      color: #000000;
+      color: $black_color;
       border: none;
       width: 100%;
       box-sizing: border-box;
       outline: none;
       background: #F8F9FA;
-
       &::placeholder{
-        color: black;
+        color: $black_color;
       }
     }
   }
@@ -60,12 +64,12 @@ $main_font_2: 'Readex Pro', sans-serif;
     flex-wrap: wrap;
     justify-content: center;
     a{
-      font-family: 'Inter';
+      font-family: $main_font_1;
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
       line-height: 17px;
-      color: #000000;
+      color: $black_color;
       background: #FFFFFF;
       border: 1px solid #C5C5C5;
       border-radius: 200px;
@@ -82,23 +86,17 @@ $main_font_2: 'Readex Pro', sans-serif;
     max-width: 935px;
     margin: auto;
     h4{
-      font-family: 'Readex Pro';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 42px;
-      line-height: 52px;
-      text-align: center;
-      color: #000000;
+      @include main_article;
       padding: 47px 0 9px;
     }
     p{
-      font-family: 'Inter';
+      font-family: $main_font_1;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
       line-height: 19px;
       text-align: center;
-      color: #000000;
+      color: $black_color;
       padding-bottom: 14px;
     }
     img{
@@ -111,19 +109,19 @@ $main_font_2: 'Readex Pro', sans-serif;
       height: 50px;
       width: 100%;
       background: #DCE5E2;
-      border: 1px solid #000000;
+      border: 1px solid $black_color;
       margin-bottom: 40px;
 
       label{
         display: none;
       }
       input{
-        font-family: 'Inter';
+        font-family: $main_font_1;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 17px;
-        color: #000000;
+        color: $black_color;
         outline: none;
         background: #DCE5E2;
         width: 285px;
@@ -133,21 +131,18 @@ $main_font_2: 'Readex Pro', sans-serif;
 
       }
       button{
-        background: #000000;
+        background: $black_color;
         border-radius: 0 200px 200px 0;
         width: 115px;
         height: 50px;
-        font-family: 'Inter';
+        font-family: $main_font_1;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 17px;
         text-align: center;
         color: #FFFFFF;
-
       }
     }
-
   }
-
 }
