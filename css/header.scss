@@ -24,10 +24,20 @@ header{
     align-items: center;
   }
   .header_logo{
+    @include max-screen(1305px) {
+      padding-left: 20px;
+    }
     @include max-screen(767px) {
       position: absolute;
-      left: calc(50% - 40px);
+      left: calc(50% - 78px);
       top: 30px;
+      padding-left: 0;
+    }
+    @include max-screen(434px) {
+      width: 130px;
+      height: 16px;
+      top: 34px;
+      padding-left: 11px;
     }
   }
   .nav{
@@ -37,6 +47,7 @@ header{
       @include max-screen(767px) {
         display: block;
         text-align: center;
+        padding-right: 0;
       }
       li{
         margin-left: 40px;
@@ -89,8 +100,14 @@ header{
   ul{
     list-style: none;
     display: flex;
+    @include max-screen(767px) {
+      padding-right: 20px;
+    }
     li{
       margin-left: 27px;
+      @include max-screen(434px) {
+        margin-left: 10px;
+      }
       &:first-of-type{
         margin-left: 0;
       }

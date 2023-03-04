@@ -1,5 +1,6 @@
 $black_color: black;
 $white_color: white;
+$main_font_1: 'Inter', sans-serif;
 
 @mixin max-screen($res) {
   @media screen and (max-width: $res) {
@@ -14,6 +15,8 @@ $white_color: white;
   overflow: visible;
   position: absolute;
   z-index:6;
+  top: 27px;
+  left: -16px;
   display: none;
   @include max-screen(767px){
     display: block;
@@ -61,6 +64,48 @@ $white_color: white;
       transform: rotate(90deg);
       opacity:0;
       width:0;
+    }
+  }
+}
+
+@include max-screen(767px){
+  #menu {
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    padding-top: 60px;
+    transition: all 0.3s ease-in-out;
+  }
+  #menu.overlay {
+    visibility: visible;
+    opacity: 95%;
+    padding-top: 100px;
+    background: grey;
+    z-index: 5;
+  }
+  #menu ul li {
+    list-style: none;
+    text-align: center;
+  }
+  #menu a {
+    color: $black_color;
+    display: block;
+    font-size: 44px;
+    margin-bottom: 70px;
+    text-decoration: none;
+    opacity: 1;
+    font-family: $main_font_1;
+    font-style: normal;
+    font-weight: 700;
+    text-shadow: #D6D6D6 1px 0 10px;
+    @include max-screen(400px) {
+      font-size: 32px;
     }
   }
 }
