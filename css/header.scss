@@ -15,6 +15,9 @@ $main_font_1: 'Inter', sans-serif;
 .container{
   max-width: 1294px;
   margin: auto;
+  @include max-screen(992px) {
+    padding: 0 12px;
+  }
 }
 header{
   padding: 30px 0 60px;
@@ -22,6 +25,9 @@ header{
   .container{
     @include flex_between;
     align-items: center;
+    @include max-screen(992px) {
+      padding: 0;
+    }
   }
   .header_logo{
     @include max-screen(1305px) {

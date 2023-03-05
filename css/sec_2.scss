@@ -58,6 +58,11 @@ $box_shadow: 0 0 20px #c5c5c5;
   position: relative;
   top: 0;
 }
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
 
 .shop_categories{
   padding: 75px 0 100px;
@@ -65,34 +70,82 @@ $box_shadow: 0 0 20px #c5c5c5;
   article{
     h2{
       @include main_article;
+      @include max-screen(894px) {
+        font-size: 32px;
+        line-height: 32px;
+      }
     }
     p{
       @include main_text;
+      @include max-screen(894px) {
+        font-size: 11px;
+        line-height: 11px;
+      }
     }
   }
   .container_flex{
     @include flex_between;
+    @include max-screen(1305px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
-  .column{
+  .column {
+    @include max-screen(1305px) {
+      display: block;
+    }
     .art_laptop{
       @include image_size;
       width: 639px;
       height: 472px;
       margin-bottom: 16px;
+      @include max-screen(894px) {
+        max-width: 639px;
+        min-height: 472px;
+      }
+      @include max-screen(652px) {
+        width: 312px;
+        height: 759px;
+      }
+      @include max-screen(324px) {
+        width: 280px;
+        height: 600px;
+        margin: auto;
+      }
       &:hover{
         top: 10px;
       }
       img{
         position: relative;
         left: 42px;
+        @include max-screen(652px) {
+          width: 312px;
+          height: 252px;
+          left: 0;
+          top: 0;
+        }
+        @include max-screen(324px) {
+          width: 280px;
+          height: 228px;
+        }
       }
       span{
         @include image_span;
         padding-left: 35px;
+        @include max-screen(652px) {
+          text-align: center;
+          padding: 60px 0 20px;
+          display: block;
+        }
       }
       h5{
         @include image_h5;
         padding-right: 42px;
+        @include max-screen(652px) {
+          text-align: center;
+          padding: 0 0;
+        }
       }
     }
     .art_watch{
@@ -100,6 +153,16 @@ $box_shadow: 0 0 20px #c5c5c5;
       width: 639px;
       height: 270px;
       display: flex;
+      @include max-screen(652px) {
+        width: 312px;
+        height: 759px;
+        display: block;
+      }
+      @include max-screen(324px) {
+        width: 280px;
+        height: 600px;
+        margin: auto;
+      }
       &:hover{
         position: relative;
         top: 10px;
@@ -107,23 +170,54 @@ $box_shadow: 0 0 20px #c5c5c5;
       img{
         position: relative;
         left: 42px;
+        @include max-screen(652px) {
+          width: 312px;
+          height: 252px;
+          left: 0;
+          top: 0;
+        }
+        @include max-screen(324px) {
+          width: 280px;
+          height: 228px;
+        }
       }
       .watch_text{
         @include flex_column;
         padding-left: 36px;
+        @include max-screen(652px) {
+          display: block;
+          padding-left: 0;
+        }
         span{
           @include image_span;
           padding-left: 135px;
           padding-top: 98px;
+          @include max-screen(652px) {
+            text-align: center;
+            padding: 60px 0 20px;
+            display: block;
+          }
         }
         h5{
           @include image_h5;
+          @include max-screen(652px) {
+            text-align: center;
+            padding: 0 0;
+          }
         }
       }
     }
     }
   .art_phones{
     @include image_size;
+    @include max-screen(1305px) {
+      top: 16px;
+      @include max-screen(324px) {
+        width: 280px;
+        height: 600px;
+        margin: auto;
+      }
+    }
     &:hover{
       position: relative;
       top: 10px;
@@ -133,6 +227,11 @@ $box_shadow: 0 0 20px #c5c5c5;
       position: relative;
       left: 16px;
       top: 140px;
+      @include max-screen(324px) {
+        width: 280px;
+        height: 228px;
+        left: 0;
+      }
     }
     .phones_text{
       @include flex_column;
@@ -150,6 +249,14 @@ $box_shadow: 0 0 20px #c5c5c5;
   }
   .art_tablet{
     @include image_size;
+    @include max-screen(1305px) {
+      top: 29px;
+    }
+    @include max-screen(324px) {
+      width: 280px;
+      height: 600px;
+      margin: auto;
+    }
     &:hover{
       position: relative;
       top: 10px;
@@ -157,6 +264,10 @@ $box_shadow: 0 0 20px #c5c5c5;
     img{
       position: relative;
       top: 38px;
+      @include max-screen(324px) {
+        width: 280px;
+        height: 228px;
+      }
     }
     .tablet_text{
       @include flex_column;

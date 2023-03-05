@@ -27,26 +27,56 @@ $main_font_2: 'Readex Pro', sans-serif;
   color: $black_color;
   padding-bottom: 55px;
 }
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
 
 .most_selled{
   padding: 0 0 74px;
   background: $white_color;
   h3{
     @include main_article;
+    @include max-screen(894px) {
+      font-size: 32px;
+      line-height: 32px;
+    }
   }
   .most_selled_text{
     @include main_text;
     padding-bottom: 59px;
+    @include max-screen(1305px) {
+      padding-bottom: 15px;
+    }
+    @include max-screen(894px) {
+      font-size: 11px;
+      line-height: 11px;
+    }
   }
   .container_flex{
-    @include flex_between;
+    display: flex;
+    justify-content: space-between;
+    @include max-screen(1305px) {
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    @include max-screen(565px) {
+      justify-content: space-around;
+    }
   }
   article{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    @include max-screen(1305px) {
+      align-items: center;
+    }
     img{
       padding-left: 28px;
+      @include max-screen(1305px) {
+        padding-left: 0;
+      }
     }
     .sell_tech{
       font-family: $main_font_2;
@@ -57,9 +87,15 @@ $main_font_2: 'Readex Pro', sans-serif;
       color: $black_color;
       padding: 37px 0 9px;
       text-decoration: none;
+      @include max-screen(565px) {
+        padding-top: 15px;
+      }
     }
     &:first-of-type p{
     padding-bottom: 25px;
+      @include max-screen(565px) {
+        padding-top: 8px;
+      }
     }
     p{
       font-family: $main_font_1;
@@ -78,6 +114,9 @@ $main_font_2: 'Readex Pro', sans-serif;
       font-size: 18px;
       line-height: 22px;
       color: $black_color;
+      @include max-screen(565px) {
+        padding-bottom: 40px;
+      }
     }
   }
 }
