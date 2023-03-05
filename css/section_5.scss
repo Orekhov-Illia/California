@@ -27,17 +27,41 @@ $main_font_2: 'Readex Pro', sans-serif;
   color: $black_color;
   padding-bottom: 55px;
 }
-
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
 .ideas{
   padding: 75px 0;
   h3{
     @include main_article;
+    @include max-screen(767px) {
+      font-size: 35px;
+      line-height: 40px;
+    }
   }
   p{
     @include main_text;
+    @include max-screen(767px) {
+      font-size: 12px;
+      padding-bottom: 30px;
+    }
   }
   .container_flex{
     @include flex_between;
+    @include max-screen(1305px) {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+  .ideas_img{
+    @include max-screen(1305px) {
+      display: block;
+      width: 100%;
+      padding: 0 12px;
+    }
   }
   article{
     max-width: 600px;
@@ -50,11 +74,17 @@ $main_font_2: 'Readex Pro', sans-serif;
       line-height: 30px;
       color: $black_color;
       padding-bottom: 28px;
+      @include max-screen(767px) {
+        font-size: 20px;
+      }
     }
   }
   .see_all{
     text-align: center;
     padding-top: 73px;
+    @include max-screen(767px) {
+      padding-top: 0;
+    }
     a{
       font-family:$main_font_1;
       font-style: normal;
@@ -66,6 +96,9 @@ $main_font_2: 'Readex Pro', sans-serif;
       text-decoration: none;
       color: $black_color;
       padding-top: 73px;
+      @include max-screen(767px) {
+        font-size: 20px;
+      }
     }
     img{
       position: relative;

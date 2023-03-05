@@ -13,12 +13,21 @@ $main_font_2: 'Readex Pro', sans-serif;
   color: $black_color;
   padding-bottom: 9px;
 }
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
 
 .looking_for{
   padding-bottom: 19px;
   h3{
     @include main_article;
     padding-bottom: 24px;
+    @include max-screen(767px) {
+      font-size: 35px;
+      line-height: 49px;
+    }
   }
   form{
     background: #F8F9FA;
@@ -85,9 +94,16 @@ $main_font_2: 'Readex Pro', sans-serif;
     padding-bottom: 18px;
     max-width: 935px;
     margin: auto;
+    @include max-screen(1305px) {
+      padding: 0 12px 12px;
+    }
     h4{
       @include main_article;
       padding: 47px 0 9px;
+      @include max-screen(767px) {
+        font-size: 28px;
+        line-height: 40px;
+      }
     }
     p{
       font-family: $main_font_1;
@@ -98,20 +114,30 @@ $main_font_2: 'Readex Pro', sans-serif;
       text-align: center;
       color: $black_color;
       padding-bottom: 14px;
+      @include max-screen(767px) {
+        font-size: 12px;
+      }
     }
     img{
       display: block;
       margin: 0 auto;
       padding-bottom: 14px;
     }
-    form{
+    .email_form{
       max-width: 400px;
       height: 50px;
       width: 100%;
       background: #DCE5E2;
       border: 1px solid $black_color;
       margin-bottom: 40px;
-
+      @include max-screen(578px) {
+        max-width: 294px;
+        height: 25px;
+      }
+      @include max-screen(352px) {
+        max-width: 200px;
+        height: 20px;
+      }
       label{
         display: none;
       }
@@ -125,7 +151,12 @@ $main_font_2: 'Readex Pro', sans-serif;
         outline: none;
         background: #DCE5E2;
         width: 285px;
-
+        @include max-screen(578px) {
+          width: 150px;
+        }
+        @include max-screen(352px) {
+          width: 90px;
+        }
       }
       .form_button{
 
@@ -142,6 +173,14 @@ $main_font_2: 'Readex Pro', sans-serif;
         line-height: 17px;
         text-align: center;
         color: #FFFFFF;
+        @include max-screen(578px) {
+          width: 114px;
+          height: 44px;
+          font-size: 12px;
+        }
+        @include max-screen(352px) {
+          width: 80px;
+        }
       }
     }
   }

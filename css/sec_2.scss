@@ -67,6 +67,11 @@ $box_shadow: 0 0 20px #c5c5c5;
 .shop_categories{
   padding: 75px 0 100px;
   background-color: $white_color;
+  .container{
+    @include max-screen(767px) {
+      padding: 0;
+    }
+  }
   article{
     h2{
       @include main_article;

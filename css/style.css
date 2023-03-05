@@ -142,14 +142,17 @@ header {
           header .nav .menu_list li:first-of-type {
             margin-top: 70px; } }
       header .nav .menu_list li:hover .hover_menu {
-        display: block; }
+        display: block;
+        top: 50px; }
         @media screen and (max-width: 767px) {
           header .nav .menu_list li:hover .hover_menu {
             display: none; } }
       header .nav .menu_list li .hover_menu {
+        display: none;
         flex-direction: column;
         position: absolute;
-        display: none; }
+        top: 0;
+        transition: 0.5s; }
         header .nav .menu_list li .hover_menu li {
           margin-left: 0;
           margin-top: 14px; }
@@ -330,6 +333,9 @@ header {
 .shop_categories {
   padding: 75px 0 100px;
   background-color: white; }
+  @media screen and (max-width: 767px) {
+    .shop_categories .container {
+      padding: 0; } }
   .shop_categories article h2 {
     font-family: "Readex Pro", sans-serif;
     font-style: normal;
@@ -702,6 +708,10 @@ header {
   text-align: center;
   color: black;
   padding-bottom: 9px; }
+  @media screen and (max-width: 767px) {
+    .best h3 {
+      font-size: 28px;
+      line-height: 40px; } }
 .best p {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
@@ -711,9 +721,18 @@ header {
   text-align: center;
   color: black;
   padding-bottom: 55px; }
+  @media screen and (max-width: 767px) {
+    .best p {
+      padding-bottom: 10px;
+      font-size: 12px; } }
 .best .container_flex {
   display: flex;
   justify-content: space-between; }
+  @media screen and (max-width: 1305px) {
+    .best .container_flex {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around; } }
 .best article {
   background: #F8F9FA;
   width: 413px;
@@ -721,6 +740,9 @@ header {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center; }
+  @media screen and (max-width: 1305px) {
+    .best article {
+      margin: 12px 0; } }
   .best article h5 {
     font-family: "Readex Pro", sans-serif;
     font-style: normal;
@@ -732,6 +754,9 @@ header {
     padding-bottom: 55px;
     padding-top: 41px;
     padding-bottom: 0; }
+    @media screen and (max-width: 767px) {
+      .best article h5 {
+        font-size: 12px; } }
   .best article h4 {
     font-family: "Readex Pro", sans-serif;
     font-style: normal;
@@ -740,6 +765,9 @@ header {
     line-height: 35px;
     color: black;
     padding-bottom: 44px; }
+    @media screen and (max-width: 767px) {
+      .best article h4 {
+        font-size: 25px; } }
   .best article a {
     font-family: "Inter", sans-serif;
     font-style: normal;
@@ -752,8 +780,15 @@ header {
     border: 1px solid black;
     border-radius: 200px;
     padding: 14px 63px; }
+    @media screen and (max-width: 767px) {
+      .best article a {
+        font-size: 16px; } }
   .best article img {
     padding-top: 44px; }
+    @media screen and (max-width: 767px) {
+      .best article img {
+        width: 100%;
+        display: block; } }
 
 .ideas {
   padding: 75px 0; }
@@ -766,6 +801,10 @@ header {
     text-align: center;
     color: black;
     padding-bottom: 9px; }
+    @media screen and (max-width: 767px) {
+      .ideas h3 {
+        font-size: 35px;
+        line-height: 40px; } }
   .ideas p {
     font-family: "Readex Pro", sans-serif;
     font-style: normal;
@@ -775,9 +814,23 @@ header {
     text-align: center;
     color: black;
     padding-bottom: 55px; }
+    @media screen and (max-width: 767px) {
+      .ideas p {
+        font-size: 12px;
+        padding-bottom: 30px; } }
   .ideas .container_flex {
     display: flex;
     justify-content: space-between; }
+    @media screen and (max-width: 1305px) {
+      .ideas .container_flex {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around; } }
+  @media screen and (max-width: 1305px) {
+    .ideas .ideas_img {
+      display: block;
+      width: 100%;
+      padding: 0 12px; } }
   .ideas article {
     max-width: 600px;
     padding-top: 10px; }
@@ -789,9 +842,15 @@ header {
       line-height: 30px;
       color: black;
       padding-bottom: 28px; }
+      @media screen and (max-width: 767px) {
+        .ideas article h5 {
+          font-size: 20px; } }
   .ideas .see_all {
     text-align: center;
     padding-top: 73px; }
+    @media screen and (max-width: 767px) {
+      .ideas .see_all {
+        padding-top: 0; } }
     .ideas .see_all a {
       font-family: "Inter", sans-serif;
       font-style: normal;
@@ -803,6 +862,9 @@ header {
       text-decoration: none;
       color: black;
       padding-top: 73px; }
+      @media screen and (max-width: 767px) {
+        .ideas .see_all a {
+          font-size: 20px; } }
     .ideas .see_all img {
       position: relative;
       top: 5px; }
@@ -819,6 +881,10 @@ header {
     color: black;
     padding-bottom: 9px;
     padding-bottom: 24px; }
+    @media screen and (max-width: 767px) {
+      .looking_for h3 {
+        font-size: 35px;
+        line-height: 49px; } }
   .looking_for form {
     background: #F8F9FA;
     border: 1px solid #C5C5C5;
@@ -877,6 +943,9 @@ header {
     padding-bottom: 18px;
     max-width: 935px;
     margin: auto; }
+    @media screen and (max-width: 1305px) {
+      .looking_for article {
+        padding: 0 12px 12px; } }
     .looking_for article h4 {
       font-family: "Readex Pro", sans-serif;
       font-style: normal;
@@ -887,6 +956,10 @@ header {
       color: black;
       padding-bottom: 9px;
       padding: 47px 0 9px; }
+      @media screen and (max-width: 767px) {
+        .looking_for article h4 {
+          font-size: 28px;
+          line-height: 40px; } }
     .looking_for article p {
       font-family: "Inter", sans-serif;
       font-style: normal;
@@ -896,20 +969,31 @@ header {
       text-align: center;
       color: black;
       padding-bottom: 14px; }
+      @media screen and (max-width: 767px) {
+        .looking_for article p {
+          font-size: 12px; } }
     .looking_for article img {
       display: block;
       margin: 0 auto;
       padding-bottom: 14px; }
-    .looking_for article form {
+    .looking_for article .email_form {
       max-width: 400px;
       height: 50px;
       width: 100%;
       background: #DCE5E2;
       border: 1px solid black;
       margin-bottom: 40px; }
-      .looking_for article form label {
+      @media screen and (max-width: 578px) {
+        .looking_for article .email_form {
+          max-width: 294px;
+          height: 25px; } }
+      @media screen and (max-width: 352px) {
+        .looking_for article .email_form {
+          max-width: 200px;
+          height: 20px; } }
+      .looking_for article .email_form label {
         display: none; }
-      .looking_for article form input {
+      .looking_for article .email_form input {
         font-family: "Inter", sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -919,7 +1003,13 @@ header {
         outline: none;
         background: #DCE5E2;
         width: 285px; }
-      .looking_for article form button {
+        @media screen and (max-width: 578px) {
+          .looking_for article .email_form input {
+            width: 150px; } }
+        @media screen and (max-width: 352px) {
+          .looking_for article .email_form input {
+            width: 90px; } }
+      .looking_for article .email_form button {
         background: black;
         border-radius: 0 200px 200px 0;
         width: 115px;
@@ -931,6 +1021,14 @@ header {
         line-height: 17px;
         text-align: center;
         color: #FFFFFF; }
+        @media screen and (max-width: 578px) {
+          .looking_for article .email_form button {
+            width: 114px;
+            height: 44px;
+            font-size: 12px; } }
+        @media screen and (max-width: 352px) {
+          .looking_for article .email_form button {
+            width: 80px; } }
 
 footer {
   background: #F8F9FA;
@@ -939,6 +1037,19 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 44px 0 78px; }
+    @media screen and (max-width: 776px) {
+      footer .container {
+        display: block; } }
+    @media screen and (max-width: 1305px) {
+      footer .container {
+        padding: 44px 12px 78px 12px; } }
+  @media screen and (max-width: 776px) {
+    footer .footer_adapt {
+      text-align: center; } }
+  @media screen and (max-width: 580px) {
+    footer .footer_logo {
+      width: 130px;
+      height: 16px; } }
   footer p {
     font-family: "Inter", sans-serif;
     font-style: normal;
@@ -947,12 +1058,29 @@ footer {
     line-height: 19px;
     color: black;
     padding-top: 18px; }
+    @media screen and (max-width: 776px) {
+      footer p {
+        font-size: 12px;
+        padding-bottom: 20px; } }
+    @media screen and (max-width: 580px) {
+      footer p {
+        font-size: 10px; } }
   footer .footer_menu {
     display: flex;
     align-items: flex-start; }
+    @media screen and (max-width: 776px) {
+      footer .footer_menu {
+        flex-wrap: wrap;
+        justify-content: space-around; } }
   footer ul {
     margin-right: 100px;
     list-style: none; }
+    @media screen and (max-width: 1305px) {
+      footer ul {
+        margin-right: 50px; } }
+    @media screen and (max-width: 776px) {
+      footer ul {
+        margin-right: 20px; } }
     footer ul li {
       font-family: "Readex Pro", sans-serif;
       font-style: normal;
@@ -961,6 +1089,12 @@ footer {
       line-height: 28px;
       color: black;
       margin-bottom: 19px; }
+      @media screen and (max-width: 776px) {
+        footer ul li {
+          font-size: 16px;
+          margin-bottom: 0; }
+          footer ul li:first-of-type {
+            padding-top: 20px; } }
       footer ul li a {
         font-family: "Inter", sans-serif;
         font-style: normal;
@@ -970,6 +1104,9 @@ footer {
         color: black;
         margin-bottom: 14px;
         text-decoration: none; }
+        @media screen and (max-width: 776px) {
+          footer ul li a {
+            font-size: 11px; } }
   footer .footer_end {
     max-width: 1350px;
     margin: auto;
@@ -981,6 +1118,9 @@ footer {
       display: flex;
       justify-content: space-between;
       padding-top: 52px; }
+      @media screen and (max-width: 1305px) {
+        footer .footer_end .footer_end_flex {
+          padding: 52px 12px; } }
     footer .footer_end span {
       font-family: "Readex Pro", sans-serif;
       font-style: normal;
@@ -988,6 +1128,9 @@ footer {
       font-size: 18px;
       line-height: 22px;
       color: black; }
+      @media screen and (max-width: 441px) {
+        footer .footer_end span {
+          font-size: 12px; } }
     footer .footer_end a {
       font-family: "Inter", sans-serif;
       font-style: normal;
@@ -996,9 +1139,15 @@ footer {
       line-height: 22px;
       color: black;
       text-decoration: none; }
+      @media screen and (max-width: 441px) {
+        footer .footer_end a {
+          font-size: 12px; } }
       footer .footer_end a img {
         position: relative;
         top: 4px; }
+        @media screen and (max-width: 441px) {
+          footer .footer_end a img {
+            display: none; } }
 
 * {
   padding: 0;

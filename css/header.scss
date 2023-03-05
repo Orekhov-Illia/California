@@ -68,19 +68,20 @@ header{
       }
         &:hover .hover_menu{
           display: block;
+          top: 50px;
           @include max-screen(767px) {
             display: none;
           }
         }
         .hover_menu{
+          display: none;
           flex-direction: column;
           position: absolute;
-          display: none;
-
+          top: 0;
+          transition: 0.5s;
           li{
             margin-left: 0;
             margin-top: 14px;
-
           }
         }
       a{

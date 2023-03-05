@@ -7,6 +7,11 @@ $main_font_2: 'Readex Pro', sans-serif;
   display: flex;
   justify-content: space-between;
 }
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
 
 footer{
   background: #F8F9FA;
@@ -14,7 +19,24 @@ footer{
   .container{
     @include flex_between;
     padding: 44px 0 78px;
+    @include max-screen(776px) {
+      display: block;
+    }
+    @include max-screen(1305px) {
+      padding: 44px 12px 78px 12px;
+    }
   }
+  .footer_adapt{
+    @include max-screen(776px) {
+      text-align: center;
+    }
+  }
+.footer_logo{
+  @include max-screen(580px) {
+    width: 130px;
+    height: 16px;
+  }
+}
   p{
     font-family: $main_font_1;
     font-style: normal;
@@ -23,15 +45,32 @@ footer{
     line-height: 19px;
     color: $black_color;
     padding-top: 18px;
+    @include max-screen(776px) {
+      font-size: 12px;
+      padding-bottom: 20px;
+    }
+    @include max-screen(580px) {
+      font-size: 10px;
+    }
   }
   .footer_menu{
     display: flex;
     align-items: flex-start;
+    @include max-screen(776px) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+    }
   }
   ul{
     margin-right: 100px;
     list-style: none;
-
+    @include max-screen(1305px) {
+      margin-right: 50px;
+    }
+    @include max-screen(776px) {
+      margin-right: 20px;
+    }
     li{
       font-family: $main_font_2;
       font-style: normal;
@@ -40,6 +79,13 @@ footer{
       line-height: 28px;
       color: $black_color;
       margin-bottom: 19px;
+      @include max-screen(776px) {
+        font-size: 16px;
+        margin-bottom: 0;
+        &:first-of-type{
+          padding-top: 20px;
+        }
+      }
       a{
         font-family: $main_font_1;
         font-style: normal;
@@ -49,6 +95,10 @@ footer{
         color: $black_color;
         margin-bottom: 14px;
         text-decoration: none;
+        @include max-screen(776px) {
+          font-size: 11px;
+
+        }
       }
     }
   }
@@ -62,6 +112,9 @@ footer{
       margin: auto;
       @include flex_between;
       padding-top: 52px;
+      @include max-screen(1305px) {
+        padding: 52px 12px;
+      }
     }
     span{
       font-family: $main_font_2;
@@ -70,6 +123,9 @@ footer{
       font-size: 18px;
       line-height: 22px;
       color: $black_color;
+      @include max-screen(441px) {
+        font-size: 12px;
+      }
     }
     a{
       font-family: $main_font_1;
@@ -79,9 +135,15 @@ footer{
       line-height: 22px;
       color: $black_color;
       text-decoration: none;
+      @include max-screen(441px) {
+        font-size: 12px;
+      }
       img{
         position: relative;
         top: 4px;
+        @include max-screen(441px) {
+          display: none;
+        }
       }
     }
   }
